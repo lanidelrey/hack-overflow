@@ -1,136 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>HackOverflow</title>
-<style>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>HackOverflow: Hardware Edition</title>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	</head>
 
-  /* Parallax base styles
-  --------------------------------------------- */
+	<body>
+		<header id="header">
+		<div>
+		<div id="logo"><a href="">HackOverflow</a></div>
+		<nav id="nav">
+			<ul>
+				<li><a href="#home" title="Register Now!">HOME</a></li>
+				<li><a href="#about" title="Description">ABOUT</a></li>
+				<li><a href="#sponsor" title="Sponsors">SPONSORS</a></li>
+				<li><a  href="#contact" title="Contact">CONTACT</a></li>
+			</ul>
+		</div>
+		</header>
 
-  .parallax {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 1px;
-    perspective: 1px;
-  }
-
-  .parallax__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  .parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-
-  .parallax__layer--back {
-    -webkit-transform: translateZ(-1px) scale(2);
-    transform: translateZ(-1px) scale(2);
-    background-color: #000;
-  }
-
-  .parallax__layer--back p {
-  	color: #FFF;
-  }
-
-
-  /*styles
-  --------------------------------------------- */
-
-  * {
-    margin:0;
-    padding:0;
-  }
-
-  body {
-    font: 100% / 1.5 Arial;
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  .parallax {
-    font-size: 200%;
-  }
-
-   /* add some padding to force scrollbars */
-  .parallax__layer {
-    padding: 100vh 0;
-  }
-
-  .content {
-  	height: 100vh;
-  }
-
-  #faq {
-  	background-color: #4ECDC4;
-  }
-
-  #schedule {
-  	background-color: #C7F464;
-  }
-
-  #contact {
-  	background-color: #FF6B6B;
-  }
-
-  #nav {
-  	position: fixed;
-  	background-color: #C44D58;
-  	background-attachment: fixed;
-  	z-index: 100;
-  	width: 100vw;
-  }
-
-</style>
-</head>
-
-<body>
-	<div id="nav">
-		<h1><p>NAVIGATION</p></h1>
-	</div>
-  <div class="parallax">
-    <div class="parallax__layer parallax__layer--back">
-      <div id="main">
-      	<p>HackOverflow: Hardware Edition</p>
-				<p>11 April 2015, 10AM - 10PM</p>
-				<p>Stanford University: Huang Engineering Center, Basement</p>
-      </div>
-    </div>
-    <div class="parallax__layer parallax__layer--base">
-      <div class="content" id="faq">
-      	<p><h1>FAQ</h1></p><br>
-      	<p>Have questions? Look here for answers once they arrive!</p>
-      </div>
-     	<div class="content" id="schedule">
-     		<p><h1>SCHEDULE</h1></p><br>
-				<p>Why need a schedule when you can be spontaneous?</p>
-			</div>	
-			<div class="content" id="contact">
-				<p><h1>CONTENT</h1></p><br>
-				<p>Contact: hackoverflow@cs.stanford.edu</p>
+		<div id="home" class="slide">
+			<div>
+				<div id="title"></div>
+				<div id="divider"> </div>
+				<div id="time">
+					<h2>Saturday, April 25, 2014</h2>
+					<h2>10 AM – 10 PM</h2>
+					<h2>Jen-Hsun Huang Engineering Center, Basement</h2>
+				</div>
+				<div><h2><a href="https://hackoverflow.typeform.com/to/zNSIMK">REGISTER</a></h2></div>
 			</div>
-			<div class="content" id="cat">
-				<img src="burbabes.jpg">
-			</div>
-    </div>
-  </div>
+		</div>
 
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-10812217-1', 'auto');
-ga('send', 'pageview');
-</script>
-
-</body>
+		<div id="about" class="slide">
+        	<div>
+            	<div id="aboutText">
+            		<h2>What is HackOverflow?</h2><hr>
+            		<p>HackOverflow is a 12-hour hackathon hosted by Stanford Women in Computer Science (WiCS), focused on building with awesome hardware. We’ll be providing fun things to hack on, mentors, workshops, swag, and food!</p><br>
+            		<p>We encourage people of all skill levels to participate, although it is recommended that you have some experience programming, whether it be from taking 106A or fiddling around on your own. Whether you've never been to a hackathon and want to try one out or just want to experiment with hardware, this is the right place for you!</p>
+        		</div>
+        	</div>
+    	</div>
+ 
+   		<div id="sponsor" class="slide">
+        	<div>
+            	<h2>Sponsors</h2><hr>
+            	<a href="https://www.facebook.com/facebook"><div id="fb"><h2>Platinum Sponsor</h2></div></a>
+				<a href="http://web.stanford.edu/group/wics/"><div id="wics"><h2>Presenting Sponsor</h2></div></a>
+        	</div>
+    	</div>
+ 
+    	<div id="contact" class="slide">
+        	<div>
+            	<div style="transform: translate(0%, 250%)">
+            		<h3>For more information, contact</h3>
+            		<h2><a href="mailto:hackoverflow@cs.stanford.edu">hackoverflow@cs.stanford.edu</a></h2>
+        		</div>
+        	</div>
+    	</div>
+	</body>
 </html>
